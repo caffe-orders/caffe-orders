@@ -9,15 +9,24 @@ class Controller_main extends Controller
         $HeadMenu = $this->model->HeadMenu();        
         $this->tpl->set('HeadMenu', $HeadMenu);          
         $this->data['HeadMenu'] = $this->tpl->generate('elements/HeadMenu');
+        if($curl = curl_init()) 
+        {
+        curl_setopt($curl, CURLOPT_URL, 'http://api.caffe-orders.ru/auth/login?email=azaza&password=123');
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        $bodyData = json_decode(curl_exec($curl), true);
+        curl_close($curl);
+        }
     }
     function action_index()
-    {  
-        /*
-        $this->data['Content'] = "Different text";
-        $this->view->generate('main/MainPage.tpl',$this->data);
-        */
-        $query="SELECT * FROM caffe ORDER BY `id` DESC LIMIT 0, 10";        
-        $caffe = $this->model->getCaffe($query);
+    {      
+        if($curl = curl_init()) 
+        {
+        curl_setopt($curl, CURLOPT_URL, 'http://api.caffe-orders.ru/caffes/list?limit=10&offset=0');
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        $bodyData = json_decode(curl_exec($curl), true);
+        curl_close($curl);
+        }       
+        $caffe = $bodyData['data'];
         $this->tpl->set("caffe",$caffe);
         $caffeList = $this->tpl->generate("main/generate/CaffeList");
         $this->tpl->set("caffeList",$caffeList);

@@ -1,34 +1,28 @@
 <!DOCTUPE html>
 <html>
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="style/i/favicon.ico" />
-  <link rel = "stylesheet" href = "style/style.css" />
-  <meta http-equiv = "content-type" content = "text/html; charset = utf-8" />
-  <meta name = "description" content = "Clain Atomi portfolio theme!" />
-  <link rel="stylesheet" href="<?php echo URL.'application/view/';?>css/style.css">
+  <head>
+    <link rel="shortcut icon" href="<?php echo URL.'application/view/';?>styles/i/favicon.ico" />
+    <link rel = "stylesheet" href = "<?php echo URL.'application/view/';?>styles/global_template.css" />
+    <link rel = "stylesheet" href = "<?php echo URL.'application/view/';?>styles/body_template.css" />
+    <meta http-equiv = "content-type" content = "text/html; charset = utf-8" />
+    <meta name="description" content="<?php echo $templateData['description']; ?>" />    
   <script type="text/javascript" src="<?php echo URL.'application/view/js/jquery-2.1.1.min.js';?>"></script>
   <script type="text/javascript" src="<?php echo URL.'application/view/js/showCaffe.js';?>"></script>
-  <title>MiniCMS Index Page</title>
-</head>
-<body class="wrapper">
-<div class="b-body">
-    <header class="b-header">
-        <a href="/" class="b-header_logo"></a>
-        <nav class="b-header_nav">
-            <?php echo $this->HeadMenu?>
-        </nav>
-        <div style="clear: both;"></div>
-    </header>
-    <div class="b-content-wrap">
-                                <?php echo $this->Content;?>
+    <title><?php echo $templateData['title']; ?></title>
+  </head>
+  <body>
+    <div class="b-wrap">
+      <aside class="b-left-nav">
+        <a href="/" class="b-left-nav_logo-img"></a>
+      </aside>
+      <div class="b-content-body">
+        <div class="b-page-name"></div>
+        <?php echo $this->Content;?>
+      </div>
+      <div class="b-hide-footer"></div>
     </div>
-    <div class="b-h-footer"></div>
-    <div style="clear: both;"></div>
-</div>
-<div class="b-footer">
-    <p class="footer_copyright">2014</p>
-</div>
-</body>
+    <footer class="b-footer">
+      <p>2014 @caffe-orders.ru</p>
+    </footer>
+  </body>
 </html>

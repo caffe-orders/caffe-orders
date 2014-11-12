@@ -1,0 +1,276 @@
+/*START CAFFE LIST SEARCH FORM START*/
+.b-caffe-searchform {
+  width: 100%;
+  height: 300px;
+  
+  margin-bottom: 10px;
+  
+  padding: 10px;
+  
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  
+  background-color: #cadeed;
+  
+   -moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+ -khtml-border-radius: 5px;
+     -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+  -icab-border-radius: 5px;
+        border-radius: 5px;
+}
+
+.b-caffe-searchform_header {
+  width: 100%;
+  height: 50px;
+  
+  padding-bottom: 10px;
+}
+
+.caffe-searchform_title {
+  max-width: 100%;
+  
+  text-align: left;
+  font-family: 'MyriadPro-Regular';
+  font-size: 2.2em;
+  color: #312020;
+  text-decoration: underline;
+}
+
+.searchform_text-lable {
+  width: auto;
+  height: 30px;
+  
+  line-height: 30px;
+  padding-right: 20px;
+  text-align: left;
+  font-family: 'MyriadPro-Regular';
+  font-size: 2.2em;
+  color: #312020;
+}
+
+.caffe-searchform_line {
+  width: 100%;
+  height: 40px;
+  
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+input[type=checkbox] {
+  width: 30px;
+  height: 30px;
+  
+  margin-top: -5px;
+  background-color: #00aeef;
+}
+
+input[type=radio] {
+  width: 30px;
+  height: 30px;
+  
+  margin-top: -5px;
+  
+  background-color: #00aeef;
+}
+
+input[type=text] {
+  width: 200px;
+  height: 30px;
+  
+  padding-left: 5px;
+  padding-right: 5px;
+  
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+   -moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+ -khtml-border-radius: 5px;
+     -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+  -icab-border-radius: 5px;
+        border-radius: 5px;  
+  margin-top: -5px;
+  
+  line-height: 30px;
+  padding-right: 20px;
+  text-align: left;
+  font-family: 'MyriadPro-Regular';
+  font-size: 1.6em;
+  color: #00aeef;
+  
+  background-color: #fff;
+}
+/*END CAFFE LIST SEARCH FORM END*/
+
+/*START CAFFE LIST ITEM START*/
+.b-caffe-list-item {
+  width: 33.3%;
+  height: 420px;
+  
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  
+  border-bottom: 10px solid #fff;
+  border-right: 10px solid #fff; 
+  
+   -moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+ -khtml-border-radius: 5px;
+     -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+  -icab-border-radius: 5px;
+        border-radius: 5px;
+  
+  float: left;
+  
+  background-color: #00aeef;
+}
+
+.b-caffe-list-item_header {
+  width: 100%;
+  height: 50px;
+  
+  background-color: #312020;
+  
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  
+  padding-left: 10px;
+  padding-right: 10px;
+  
+   -moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+ -khtml-border-radius: 5px;
+     -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+  -icab-border-radius: 5px;
+        border-radius: 5px;
+}
+
+.caffe-list-item_header__title {
+  width: 80%;
+  height: 50px;
+  
+  line-height: 50px;
+  font-family: 'MyriadPro-Regular';
+  font-size: 1.8em;
+  color: #fff;
+  text-align: left;
+  float: left;
+}
+
+.caffe-list-item_header__have-wifi {
+  width: 20%;
+  height: 50px;
+  
+  line-height: 50px;
+  font-family: 'MyriadPro-Regular';
+  font-size: 1.8em;
+  color: #00ff60;
+  text-align: right;
+  float: right;
+}
+
+.caffe-list-item_short-descr {
+  width: 100%;
+  height: 300px;
+  
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  line-height: 1.5em;
+  font-family: 'MyriadPro-Regular';
+  font-size: 1.8em;
+  color: #fff;
+  text-align: left; 
+}
+
+.caffe-list-item_footer {
+  width: 100%;
+  height: 60px;
+  
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.caffe-list-item_footer__to-full-descr-btn {
+  width: 150px;
+  height: 40px;
+  
+  margin-top: 10px;
+  
+  background-color: #312020;
+  
+   -moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+ -khtml-border-radius: 5px;
+     -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+  -icab-border-radius: 5px;
+        border-radius: 5px;
+  
+  line-height: 40px;
+  font-family: 'MyriadPro-Regular';
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  
+  float: right;
+  
+  display: block;
+  
+  text-decoration: none;
+}
+
+.caffe-list-item_footer__to-full-descr-btn:hover {
+  background-color: #953e3e;
+}
+
+@media screen and (min-width:1367px) and (max-width:1920px) {
+
+.b-caffe-list-item:nth-last-child(3n+1) {
+  border-right: 0;
+}
+  
+.b-caffe-list-item {
+  width: 33.3%;  
+}
+  
+}
+
+@media screen and (min-width:1000px) and (max-width:1365px) {
+
+.b-caffe-list-item:nth-last-child(2n+1) {
+  border-right: 0;
+}
+  
+.b-caffe-list-item {
+  width: 50%;  
+}
+  
+}
+
+@media screen and (min-width:320px) and (max-width:999px) {
+
+.b-caffe-list-item {
+  width: 100%;  
+}
+  
+}
+/*END CAFFE LIST ITEM END*/

@@ -42,7 +42,7 @@ define('SYSPATH', realpath($system).DIRECTORY_SEPARATOR);
 
 if (file_exists('Autoload.php'))
 {
-	include_once 'Autoload.php';
+    include_once 'Autoload.php';
 }
 else
 {
@@ -51,17 +51,17 @@ else
 
 if (file_exists('install.php'))
 {
-	include_once 'install.php';
+    include_once 'install.php';
 }
 
 if (file_exists(MODPATH.'ErrorHandler.php'))
 {
-	include_once MODPATH.'ErrorHandler.php';
+    include_once MODPATH.'ErrorHandler.php';
 }
 
 if (file_exists(APPPATH.'bootstrap.php'))
 {
-	include_once APPPATH.'bootstrap.php';
+    include_once APPPATH.'bootstrap.php';
 }
 $finish_time=microtime();
 
